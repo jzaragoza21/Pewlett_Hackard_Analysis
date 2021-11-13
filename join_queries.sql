@@ -42,7 +42,7 @@ INTO current_emp
 FROM retirement_info
 LEFT JOIN dept_employees
 ON retirement_info.emp_no = dept_employees.emp_no
-WHERE dept_employees.to_date = ('9999-01-01');
+WHERE dept_employees.to_date = ('1999-01-01');
 
 -- Employee count by department number
 SELECT COUNT(ce.emp_no), de.dept_no
